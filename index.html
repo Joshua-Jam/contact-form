@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="form">
+        <h1 class="form_titulo">Me mande uma mensagem</h1>
+        <p class="form_descrito">Entre em contato comigo sobre qualquer coisa relacionada a me dar uma skin de
+            Nami.<br>Te
+            darei uma resposta o mais rapido possível.</p>
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+            <input type="hidden" name="access_key" value="ca6f8000-48eb-4ef4-b106-3022dab16e52">
+
+            <input type="text" name="name" required>
+            <input type="email" name="email" required>
+            <textarea name="message" required></textarea>
+            <div class="h-captcha" data-captcha="true"></div>
+            <button type="submit">Submit Form</button>
+
+        </form>
+
+        <script src="https://web3forms.com/client/script.js" async defer></script>
+    </div>
+</body>
